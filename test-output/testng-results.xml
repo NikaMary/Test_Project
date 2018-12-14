@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[1 Init test run]]>
+    </line>
+    <line>
+      <![CDATA[1 Run Tests]]>
+    </line>
+    <line>
+      <![CDATA[1 Download driver: chrome X32]]>
+    </line>
+    <line>
+      <![CDATA[1 Click on element (Label 'Profile Photo' (.profilePhoto; css='.profile-photo'))]]>
+    </line>
+    <line>
+      <![CDATA[0 Done]]>
+    </line>
+    <line>
+      <![CDATA[1 Login as User(name:epam; password:1234) (LoginForm 'Login Form' (.loginForm; No locator))]]>
+    </line>
+    <line>
+      <![CDATA[0 Done]]>
+    </line>
+    <line>
+      <![CDATA[1 Check that page url equals to 'https://epam.github.io/JDI/index.html']]>
+    </line>
+    <line>
+      <![CDATA[1 Check that page url matches to 'https://epam.github.io/JDI/index.html']]>
+    </line>
+    <line>
+      <![CDATA[1 Check that page url contains to 'https://epam.github.io/JDI/index.html']]>
+    </line>
+    <line>
+      <![CDATA[1 Check that page title equals to 'Home Page']]>
+    </line>
+    <line>
+      <![CDATA[1 Check that page title matches to 'Home Page']]>
+    </line>
+    <line>
+      <![CDATA[1 Check that page title contains to 'Home Page']]>
+    </line>
+    <line>
+      <![CDATA[1 Test run finished. 
+Total test run time: 00:00:06.4]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="6263" started-at="2018-12-14T13:30:12Z" finished-at="2018-12-14T13:30:18Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="6263" started-at="2018-12-14T13:30:12Z" finished-at="2018-12-14T13:30:18Z">
+      <class name="org.mytests.tests.example.SimpleTest">
+        <test-method status="PASS" signature="jdiSetUp()[pri:0, instance:org.mytests.tests.example.SimpleTest@25bbe1b6]" name="jdiSetUp" is-config="true" duration-ms="436" started-at="2018-12-14T16:30:12Z" finished-at="2018-12-14T16:30:12Z">
+          <reporter-output>
+            <line>
+              <![CDATA[1 Init test run]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- jdiSetUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.mytests.tests.example.SimpleTest@25bbe1b6]" name="setUp" is-config="true" duration-ms="61" started-at="2018-12-14T16:30:12Z" depends-on-methods="com.epam.jdi.uitests.web.testng.testRunner.TestNGBase.jdiSetUp" finished-at="2018-12-14T16:30:12Z">
+          <reporter-output>
+            <line>
+              <![CDATA[1 Run Tests]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:org.mytests.tests.example.SimpleTest@25bbe1b6]" name="loginTest" duration-ms="6244" started-at="2018-12-14T16:30:12Z" finished-at="2018-12-14T16:30:18Z">
+          <reporter-output>
+            <line>
+              <![CDATA[1 Download driver: chrome X32]]>
+            </line>
+            <line>
+              <![CDATA[1 Click on element (Label 'Profile Photo' (.profilePhoto; css='.profile-photo'))]]>
+            </line>
+            <line>
+              <![CDATA[0 Done]]>
+            </line>
+            <line>
+              <![CDATA[1 Login as User(name:epam; password:1234) (LoginForm 'Login Form' (.loginForm; No locator))]]>
+            </line>
+            <line>
+              <![CDATA[0 Done]]>
+            </line>
+            <line>
+              <![CDATA[1 Check that page url equals to 'https://epam.github.io/JDI/index.html']]>
+            </line>
+            <line>
+              <![CDATA[1 Check that page url matches to 'https://epam.github.io/JDI/index.html']]>
+            </line>
+            <line>
+              <![CDATA[1 Check that page url contains to 'https://epam.github.io/JDI/index.html']]>
+            </line>
+            <line>
+              <![CDATA[1 Check that page title equals to 'Home Page']]>
+            </line>
+            <line>
+              <![CDATA[1 Check that page title matches to 'Home Page']]>
+            </line>
+            <line>
+              <![CDATA[1 Check that page title contains to 'Home Page']]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.mytests.tests.example.SimpleTest@25bbe1b6]" name="tearDown" is-config="true" duration-ms="2" started-at="2018-12-14T16:30:19Z" finished-at="2018-12-14T16:30:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="jdiTearDown()[pri:0, instance:org.mytests.tests.example.SimpleTest@25bbe1b6]" name="jdiTearDown" is-config="true" duration-ms="37" started-at="2018-12-14T16:30:19Z" depends-on-methods="org.mytests.tests.example.TestsInit.tearDown" finished-at="2018-12-14T16:30:19Z">
+          <reporter-output>
+            <line>
+              <![CDATA[1 Test run finished. 
+Total test run time: 00:00:06.4]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- jdiTearDown -->
+      </class> <!-- org.mytests.tests.example.SimpleTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
