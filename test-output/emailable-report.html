@@ -31,27 +31,39 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">6.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">8.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Default test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">org.mytests.tests.example.SimpleTest</td><td><a href="#m1"><b>loginTest</b>  </a></td><td class="numi">1</td><td>1544794212738</td><td class="numi">6244</td></tr>
+<tr><th colspan="4">Default test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">org.mytests.tests.example.SimpleTest</td><td><a href="#m1"><b>loginTest</b>  </a></td><td class="numi">1</td><td>1545214086398</td><td class="numi">7944</td></tr>
 </table>
 <h1>Default test</h1>
 <h2 id="m1">org.mytests.tests.example.SimpleTest:loginTest</h2>
 <div style="padding-left:3em">
+<h3>Test Messages</h3>
 1 Download driver: chrome X32<br/>
-1 Click on element (Label 'Profile Photo' (.profilePhoto; css='.profile-photo'))<br/>
-0 Done<br/>
-1 Login as User(name:epam; password:1234) (LoginForm 'Login Form' (.loginForm; No locator))<br/>
-0 Done<br/>
-1 Check that page url equals to 'https://epam.github.io/JDI/index.html'<br/>
-1 Check that page url matches to 'https://epam.github.io/JDI/index.html'<br/>
-1 Check that page url contains to 'https://epam.github.io/JDI/index.html'<br/>
-1 Check that page title equals to 'Home Page'<br/>
-1 Check that page title matches to 'Home Page'<br/>
-1 Check that page title contains to 'Home Page'<br/>
+1 Login as User(name:elanium@gmail.com; password:123Laina) (LoginForm 'Login Form' (.loginForm; No locator))<br/>
+<h3>Failure</h3>
+<p>Action Login as User(name:elanium@gmail.com; password:123Laina) failed. Can&apos;t get result. Reason: Action Login as User(name:elanium@gmail.com; password:123Laina) failed. Can&apos;t get result. Reason: Action Submit User(name:elanium@gmail.com; password:123Laina) and press login failed. Can&apos;t get result. Reason: Action Submit Name:elanium@gmail.com,Password:123Laina and press login failed. Can&apos;t get result. Reason: Action Fill form: Name:elanium@gmail.com,Password:123Laina failed. Can&apos;t get result. Reason: Action newInput(elanium@gmail.com) failed. Can&apos;t get result. Reason: Action clear failed. Can&apos;t get result. Reason: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;PHELIKS-PC&apos;, ip: &apos;192.168.147.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_152&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\Pheliks\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58809}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: b5a991580bcb228f8629cd9d3d9c0e0d</p>
+com.epam.jdi.uitests.web.testng.testRunner.TestNGCheck.exception(TestNGCheck.java:37)
+<br/>at com.epam.jdi.uitests.core.settings.JDISettings.exception(JDISettings.java:64)
+<br/>at com.epam.jdi.uitests.core.aop.ActionProcessor.lambda$2(ActionProcessor.java:90)
+<br/>at com.epam.jdi.tools.func.JAction2.execute(JAction2.java:14)
+<br/>at com.epam.jdi.uitests.core.aop.ActionProcessor.error(ActionProcessor.java:136)
+<br/>at com.epam.jdi.uitests.core.interfaces.composite.IForm.loginAs(IForm.java:289)
+<br/>at org.mytests.uiobjects.example.site.JDIExampleSite.login(JDIExampleSite.java:28)
+<br/>at org.mytests.tests.example.SimpleTest.loginTest(SimpleTest.java:16)
+<br/>25 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

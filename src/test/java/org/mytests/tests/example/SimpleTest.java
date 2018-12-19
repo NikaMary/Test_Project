@@ -4,14 +4,18 @@ import org.mytests.uiobjects.example.entities.User;
 import org.testng.annotations.Test;
 
 import static org.mytests.uiobjects.example.site.JDIExampleSite.homePage;
+import static org.mytests.uiobjects.example.site.JDIExampleSite.loginPageSt;
+import static org.mytests.uiobjects.example.site.JDIExampleSite.userPageSt;
 import static org.mytests.uiobjects.example.site.JDIExampleSite.login;
 
 public class SimpleTest extends TestsInit {
 
     @Test
     public void loginTest() {
-        homePage.open();
+        loginPageSt.open();
         login(new User());
-        homePage.checkOpened();
+       // homePage.checkOpened();
+    	userPageSt.open();
+    	userPageSt.checkOpened();
     }
 }

@@ -5,11 +5,13 @@ import com.epam.jdi.uitests.web.selenium.elements.common.TextField;
 import com.epam.jdi.uitests.web.selenium.elements.composite.Form;
 import com.epam.jdi.uitests.web.selenium.elements.pageobjects.annotations.simple.Css;
 import org.mytests.uiobjects.example.entities.User;
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.FindBy;
 
 public class LoginForm extends Form<User> {
-    @Css("#Name") public TextField name;
-    @Css("#Password") public TextField password;
+	@Css("[id=email]") public TextField name;
+    @Css("[id=password]") public TextField password;
 
-    @Css("[type=submit]") public Button enter;
+    @Css("[id=login-button]") public Button enter;
+    
 }
